@@ -1,0 +1,28 @@
+{
+    "name": "x-adam/tr-tax-number-verification",
+    "description": "Turkey tax number verification class.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehmet ÖĞMEN",
+            "email": "www@mehmetogmen.com.tr",
+            "homepage": "https://www.mehmetogmen.com.tr",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.2",
+        "x-adam/tr-citizen-number-validation": ">=4",
+        "x-adam/tr-tax-number-validation": ">=4"
+    },
+    "autoload": {
+        "files": [
+            "./src/TrTaxNumberVerification.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

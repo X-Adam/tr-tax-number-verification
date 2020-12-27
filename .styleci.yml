@@ -1,0 +1,5 @@
+preset: psr12
+tab-width: 4
+disabled:
+  - elseif
+  - psr12_braces
