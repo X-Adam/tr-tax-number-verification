@@ -16,7 +16,8 @@
         "ext-json": "*",
         "guzzlehttp/guzzle": "^7.2",
         "x-adam/tr-citizen-number-validation": ">=4",
-        "x-adam/tr-tax-number-validation": ">=4"
+        "x-adam/tr-tax-number-validation": ">=4",
+        "x-adam/tr-string": "^3.0"
     },
     "autoload": {
         "files": [
