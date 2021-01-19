@@ -93,25 +93,11 @@ class TrTaxNumberVerification
             return static::errorResponse(4);
         }
 
-        if ($company_type !== 1) {
-            $strArray = explode(' ', $response->data->unvan);
-            $lastName = array_pop($strArray);
-
-            return (object)[
-                'status' => true,
-                'data' => [
-                    'person' => [
-                        'first_name' => tr_ucwords(implode(' ', $strArray)),
-                        'last_name' => tr_strtoupper($lastName)
-                    ]
-                ]
-            ];
-        }
-
         return (object)[
             'status' => true,
-            'data' => [
-                'title' => $response->data->unvan
+            'data' => (object)[
+                'title' => $response->data->unvan,
+                'tax_no' => $response->data->vkn,
             ]
         ];
     }
